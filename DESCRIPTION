@@ -1,0 +1,16 @@
+Package: TestAndTransform
+Title: Transform Data Columns Based on Normality Testing
+Version: 0.0.0.9000
+Authors@R: 
+    person("Christopher", "Keneally", email = "christopher.keneally@adelaide.edu.au", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-7261-6259"))
+Description: This package provides functionalities to automatically test each numeric column of a dataframe for normality using the Shapiro-Wilk test and apply the best normalization transformation using the bestNormalize package. It is designed to simplify preprocessing steps for data analysis, ensuring that numeric data conforms to normality where necessary.
+License: CC-BY-4.0
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
+Imports: 
+    bestNormalize,
+    stats
+Suggests: 
+    testthat (>= 3.0.0)
