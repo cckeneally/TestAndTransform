@@ -13,4 +13,4 @@ devtools::install_github("cckeneally/TestAndTransform")
 ```
 
 # References
-Peterson, Ryan A. "Finding Optimal Normalizing Transformations via best Normalize." R Journal 13.1 (2021).
+Peterson, Ryan A. "Finding Optimal Normalizing Transformations via best Normalize." R Journal 13.1 (2021). [ISSN 2073-4859](https://journal.r-project.org/articles/RJ-2021-041/RJ-2021-041.pdf)
