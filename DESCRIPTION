@@ -1,6 +1,6 @@
 Package: TestAndTransform
 Title: Transform Data Columns Based on Normality Testing
-Version: 0.0.0.9000
+Version: 0.0.1
 Authors@R: 
     person("Christopher", "Keneally", email = "christopher.keneally@adelaide.edu.au", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-7261-6259"))

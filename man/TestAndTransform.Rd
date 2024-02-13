@@ -4,26 +4,26 @@
 \alias{TestAndTransform}
 \title{Test and Transform Numeric Columns in a Dataframe}
 \usage{
-TestAndTransform(dataframe, min_non_na_prop = 0.5)
+TestAndTransform(dataframe, min_non_na_prop = 0.5, exclude = c())
 }
 \arguments{
 \item{dataframe}{A dataframe to process.}
 
 \item{min_non_na_prop}{The minimum proportion of non-NA values required in a column for it to be considered for testing and transformation.
 Default is 0.5, meaning at least 50\% of the values in the column must be non-NA.}
+
+\item{exclude}{A vector of column names to exclude from testing and transformation.}
 }
 \value{
-A dataframe with numeric columns transformed as necessary.
+A dataframe with numeric columns transformed as necessary, excluding specified columns.
 }
 \description{
 Iterates over each numeric column in a dataframe, tests each for normality using the Shapiro-Wilk test,
-and applies the best normalization transformation if needed, based on a user-specified minimum proportion of non-NA values.
-Returns a new dataframe with transformed columns.
+applies the best normalization transformation if needed, based on a user-specified minimum proportion of non-NA values,
+and allows excluding specific columns by name. Returns a new dataframe with transformed columns.
 }
 \examples{
 data(iris)
-# Transform iris dataset with the default minimum non-NA proportion
-transformed_iris_default <- TestAndTransform(iris)
-# Transform iris dataset specifying a different minimum non-NA proportion
-transformed_iris_custom <- TestAndTransform(iris, min_non_na_prop = 0.75)
+# Transform iris dataset with the default minimum non-NA proportion, excluding the 'Species' column
+transformed_iris_excluded <- TestAndTransform(iris, exclude = c("Species"))
 }
