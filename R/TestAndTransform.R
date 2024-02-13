@@ -11,6 +11,7 @@
 #' @return A dataframe with numeric columns transformed as necessary, excluding specified columns.
 #' @importFrom bestNormalize bestNormalize
 #' @importFrom stats shapiro.test
+#' @importFrom stats predict
 #' @examples
 #' data(iris)
 #' # Transform iris dataset with the default minimum non-NA proportion, excluding the 'Species' column
